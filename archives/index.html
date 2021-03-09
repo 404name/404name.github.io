@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
     <link rel="stylesheet" href="https://404name.github.io/styles/main.css">
     <link rel="stylesheet" href="https://404name.github.io/media/css/font-awesome.css">
-    <meta name="description" content="温故而知新" />
-    <title>Gridea</title>
+    <meta name="description" content="计科大二在学，" />
+    <title>404name小站点</title>
 </head>
 
 
@@ -67,6 +67,11 @@
     <div id="side-posttitle" style="display: none;">
         
     
+    博客使用帮助
+    <script>postsnum += 1</script>
+    
+    
+    
     
     
     Hello Gridea
@@ -86,10 +91,10 @@
         <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
                     src='https://404name.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         <div class="avatar-border">
-            <img src="https://404name.github.io/images/avatar.png?v=1615205006109" class="avatar">
+            <img src="https://404name.github.io/images/avatar.png?v=1615250139646" class="avatar">
         </div>
-        <div class="sitename">Gridea</div>
-        <span class="describtion" data-text='["温故而知新"]'>&nbsp;</span>
+        <div class="sitename">404name小站点</div>
+        <span class="describtion" data-text='["计科大二在学，"]'>&nbsp;</span>
         
         <div class="search">
             <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
@@ -134,6 +139,14 @@
     <div class="mchocie describtion">
         <a data-pjax href="/tags" class="menubutton">
             标签
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a data-pjax href="https://n404name.gitee.io/win10/" class="menubutton">
+            云电脑
         </a>
     </div>
     
@@ -415,7 +428,7 @@
         let talkindex = 0;
         get();
         function get() {
-            var t = JSON.parse('[{"author":"404name","img":"","text":"博客成立啦","time":"2021.3.8"},{"author":"","img":"","text":"","time":""}]');
+            var t = JSON.parse('[{"author":"404name","img":"https://gitee.com/N404name/blog-img/raw/master/%20%20(16).jpg","text":"博客成立啦","time":"2021.3.8"},{"author":"","img":"","text":"","time":""}]');
             talkindex = t.length - 1;
             for (var i = 0; i <= t.length - 1; i++) {
                 var d = {};
@@ -447,7 +460,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://404name.github.io/images/avatar.png?v=1615205006109">\
+                        <img class="intro1" src="https://404name.github.io/images/avatar.png?v=1615250139646">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -460,7 +473,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://404name.github.io/images/avatar.png?v=1615205006109">\
+                        <img class="intro1" src="https://404name.github.io/images/avatar.png?v=1615250139646">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -876,7 +889,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a data-pjax class="navbar-brand" href="https://404name.github.io">Gridea&nbsp;&nbsp;|</a>
+      <a data-pjax class="navbar-brand" href="https://404name.github.io">404name小站点&nbsp;&nbsp;|</a>
       <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
           style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
     </div>
@@ -905,6 +918,14 @@
         <li>
           <a data-pjax href="/tags">
             标签
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="https://n404name.gitee.io/win10/">
+            云电脑
           </a>
         </li>
         
@@ -965,8 +986,29 @@
     <div class="archives-content">
         
         
+        <div class="archives-year">2021</div>
+        <ul>
+            
+            
+            <li><span></span>
+                <div>
+                  <a data-pjax href="https://404name.github.io/post/bo-ke-shi-yong-bang-zhu/" class="post">
+                    <div class="archives-title">博客使用帮助</div>
+                    <div class="archives-time">2021-03-08</div>
+                </a>
+                    
+                </div>
+            </li>
+            
+            
+            
+            
+        </ul>
+        
         <div class="archives-year">2018</div>
         <ul>
+            
+            
             
             
             <li><span></span>
@@ -1046,10 +1088,10 @@
         </div>
         <div id="bg">
         </div>
-        <div id="bgchoice" style="display: none">default
+        <div id="bgchoice" style="display: none">link
             </div>
             
-            <div id="bgurl" style="display:none">/media/images/bgimg.png</div>
+            <div id="bgurl" style="display:none">https://gitee.com/N404name/blog-img/raw/master/%20%20(1).jpeg</div>
                
     </div>
 
